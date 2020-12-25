@@ -21,7 +21,7 @@
 				<a href="#"><li class="links" id="skills">Skills</li>	</a>
 				<a href="#"><li class="links" id="about">About Me</li></a>
 				<a href="#"><li class="links" id="works">Works</li></a>
-				<a href="#"><li class="links" id="contact" >Contacts</li></a>
+				<a href="#"><li class="links" id="contact" >Contact Me</li></a>
 				<li class="dark-light" onclick="theme()"><i class="fa fa-moon-o " id="theme-icon" aria-hidden="true"></i></li>
 				
 			</ul>
@@ -35,12 +35,15 @@
 
 		<div>Contacts</div>
 		<div class="icons">
-			<i class="fa fa-facebook-square fa-2x social" aria-hidden="true"></i>
-			<a href="https://t.me/nasho91" style="background-decoration:inherixt"><i class="fa fa-telegram fa-2x social" aria-hidden="true"></i></a>
+			<a href="https://t.me/nasho91">
+			<i class="fa fa-facebook-square fa-2x social" aria-hidden="true"></i></a>
+			<a href="https://t.me/nasho91" style="background-decoration:inherixt"><i class="fa fa-telegram fa-2x social" aria-hidden="true" ></i></a>
 			<a href="https://www.linkedin.com/in/natnael-mekuriaw-504361178/" id="slink"><i class="fa fa-linkedin-square fa-2x social" aria-hidden="true"></i></a>
-			<a href="mailto:natnaelmekuriaw50@gamil.com" id="slink"><i class="fa fa-google-plus-square fa-2x social" aria-hidden="true"></i></a>
-			<i class="fa fa-twitter-square fa-2x social" aria-hidden="true"></i>
-			<i class="fa fa-instagram fa-2x social" aria-hidden="true"></i>
+			<a href="mailto:natnaelmekuriaw50@gamil.com"><i class="fa fa-google-plus-square fa-2x social" aria-hidden="true"></i></a>
+			<a href="https://t.me/nasho91">
+			<i class="fa fa-twitter-square fa-2x social" aria-hidden="true"></i></a>
+			<a href="https://t.me/nasho91">
+			<i class="fa fa-instagram fa-2x social" aria-hidden="true"></i></a>
 			<!-- <a href="game.html"><i class="fa fa-gamepad fa-2x social" aria-hidden="true"></i></a> -->
 			
 		</div>
@@ -104,7 +107,8 @@
 	function theme(){		
 
 		let theme = document.getElementById("theme");
-		let slink = document.getElementById("slink");
+		let socialLinks = document.getElementsByTagName("a").style
+		//let slink = document.getElementById("slink");
 		
 		let themeIcon = document.getElementById("theme-icon");
 		let home = document.getElementById("home");
@@ -117,13 +121,14 @@
 		if(status.theme === 0){
 		
 				theme.classList.add("dark");
-				slink.classList.add("dark");
+				//slink.classList.add("dark");
 				themeIcon.className="fa fa-sun-o";
 				home.classList.add("links-on-dark")
 				skills.classList.add("links-on-dark")
 				works.classList.add("links-on-dark")
 				about.classList.add("links-on-dark")
 				contact.classList.add("links-on-dark")
+				socialLinks.classList.add("dark-social")
 				
 				status.theme = 1;
 			}
@@ -137,6 +142,7 @@
 				works.classList.remove("links-on-dark")
 				about.classList.remove("links-on-dark")
 				contact.classList.remove("links-on-dark")
+				socialLinks.classList.remove("dark-social")
 
 				status.theme = 0;
 			}

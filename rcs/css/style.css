@@ -36,8 +36,8 @@ li{
 	padding: 5px;
 }
 a{
-	text-decoration: none!important;
-	color: #000000!important;
+	text-decoration: none;
+	color: #000000;
 }
 
 
@@ -109,6 +109,10 @@ li:hover{
 }*/
 .social{
 	padding-right: 10px;
+}
+.dark-social{
+  text-decoration: none!important;
+  color: #ffffff!important;
 }
 .social:hover{
 	color:  #00cc00;
