@@ -4,25 +4,33 @@
 body{
 	font-family: 'Nunito','Barlow', sans-serif;
 	font-weight: bold;
-
+	background-image: url("../img/Developer.svg");
+	background-repeat: no-repeat;
+	background-position: right top;
 }	
+.nav{
+	margin-top: 10px;
+}
 .NM{
-	background:  #009900;
+	cursor: pointer;
+	background:  #54B192;
 	color: #ffffff;
 	/*margin: auto;*/
 	width: fit-content;
-	font-size: 30px;
-	border-radius: 100px;
-	padding: 10px;
+	font-size: 25px;
+	border-radius: 200px;
+	padding: 15px;
+
 
 }
 ul{
 	list-style: none;
 	display: inline;
+
 }
 li{
 	display: inline;
-	padding: 2px;
+	padding: 5px;
 }
 a{
 	text-decoration: none!important;
@@ -31,4 +39,35 @@ a{
 .rightlinks{
 	font-size: 20px;
 	
+}
+strong{
+	display: block;
+	font-size: 40px;
+	margin-top:100px;
+}
+p.intro{
+	max-width: 370px;
+	display: block;
+	margin-top: 100px;
+}
+h3{
+	margin: auto;
+}
+.active{
+	/*color: #ffffff;
+	border:  1px solid #00cc00;
+	border-radius: 200px;
+	background: linear-gradient( to right, #00cc00,  #ffff00);*/
+
+    background-image:linear-gradient(to right,rgb(27, 39, 133),rgb(60, 0, 128));
+    color:#ffffff;
+    width : 130px;
+    border-radius : 200px;
+}
+
+li:hover{
+	background-image:linear-gradient(to right,rgb(27, 39, 133),rgb(60, 0, 128));
+    color:#ffffff;
+    width : 130px;
+    border-radius : 200px;
 }
