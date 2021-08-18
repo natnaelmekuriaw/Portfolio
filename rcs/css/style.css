@@ -56,11 +56,11 @@ p.intro{
 h3{
 	margin: auto;
 }
-.active{
-	/*color: #ffffff;
-	border:  1px solid #00cc00;
-	border-radius: 200px;
-	background: linear-gradient( to right, #00cc00,  #ffff00);*/
+/*.active{
+	//color: #ffffff;
+	//border:  1px solid #00cc00;
+	//border-radius: 200px;
+	//background: linear-gradient( to right, #00cc00,  #ffff00);
 
     background-image:linear-gradient(to right,rgb(27, 39, 133),rgb(60, 0, 128));
     color:#ffffff;
@@ -73,7 +73,7 @@ li:hover{
     color:#ffffff;
     width : 130px;
     border-radius : 200px;
-}
+}*/
 .fa{
 	padding-right: 10px;
 }
@@ -86,15 +86,22 @@ li:hover{
 	margin-top: 100px;
 	text-align: center;
 }
+.skills{
 
+}
+.skills#web{
+	background-color: red;
+	max-width: 300px;
+	margin-left: 100%;
+}
 
 .button2 {
-	background: #000000;
+	
   position: relative;
   display: inline-block;
   padding: 30px 61px;
   border-radius: 4px;
-  color: #03e9f4;
+  color: #000000;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;

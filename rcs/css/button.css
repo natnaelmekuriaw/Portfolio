@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background: #060505;
-}
-
+}*/
+/*
 .button {
   border: 2px solid #d2bdff;
   height: 80px;
@@ -70,31 +70,38 @@ body {
 .button:hover::after {
   content: "I'M GLOWING";
   text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #82bedc, 0 0 30px #82bedc, 0 0 40px #82bedc, 0 0 50px #82bedc, 0 0 60px #82bedc;
-}
+}*/
 
-.button2 {
+.links {
   position: relative;
   display: inline-block;
-  padding: 30px 61px;
+  padding: 10px 15px;
   border-radius: 4px;
-  color: #03e9f4;
+  color: #000000;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
-  margin: 25px;
-  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+  
   filter: hue-rotate(0deg);
-  border: 2px solid #d2bdff;
+  
   transition: all 0.1s linear;
 }
-.button2:hover {
+.links:hover{
+  color: #6666ff;
+  transform: scale(1.02,1.02);
+}
+
+.active {
+  color: #6666ff;
+  transform: scale(1.02,1.02);
   border: 1px solid transparent;
 }
-.button2:hover span {
+.active span {
   position: absolute;
   display: block;
 }
-.button2:hover span:nth-child(1) {
+.active span:nth-child(1) {
   filter: hue-rotate(0deg);
   top: 0;
   left: 0;
@@ -111,7 +118,7 @@ body {
     left: 100%;
   }
 }
-.button2:hover span:nth-child(2) {
+.active span:nth-child(2) {
   filter: hue-rotate(60deg);
   top: -100%;
   right: 0;
@@ -129,7 +136,7 @@ body {
     top: 100%;
   }
 }
-.button2:hover span:nth-child(3) {
+.active span:nth-child(3) {
   filter: hue-rotate(120deg);
   bottom: 0;
   right: 0;
@@ -148,7 +155,7 @@ body {
     right: 100%;
   }
 }
-.button2:hover span:nth-child(4) {
+.active span:nth-child(4) {
   filter: hue-rotate(300deg);
   bottom: -100%;
   left: 0;
