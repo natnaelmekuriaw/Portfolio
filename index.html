@@ -11,7 +11,8 @@
 	<link rel="stylesheet" type="text/css" href="rcs/css/style.css">
 	<link rel="stylesheet" type="text/css" href="rcs/css/button.css">
 </head>
-<body>
+
+<body id="theme" class="theme">
 	<div class="container">
 		<div class="nav navbar">
 			<div class="NM">NM</div>
@@ -21,7 +22,9 @@
 				<a href="#"><li class="links">About Me</li></a>
 				<a href="#"><li class="links">Works</li></a>
 				<a href="#"><li class="links" >Contacts</li></a>
-			
+				<li class="dark-light" onclick="theme()"><i class="fa fa-moon-o " id="theme-icon" aria-hidden="true"></i></li>
+				<!-- <i class="fa fa-sun-o" aria-hidden="true"></i> -->
+
 
 			</ul>
 			
@@ -34,12 +37,12 @@
 
 		<div>Contacts</div>
 		<div class="icons">
-			<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-			<i class="fa fa-telegram fa-2x" aria-hidden="true"></i>
-			<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-			<i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
-			<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-			<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+			<i class="fa fa-facebook-square fa-2x social" aria-hidden="true"></i>
+			<i class="fa fa-telegram fa-2x social" aria-hidden="true"></i>
+			<i class="fa fa-linkedin-square fa-2x social" aria-hidden="true"></i>
+			<i class="fa fa-google-plus-square fa-2x social" aria-hidden="true"></i>
+			<i class="fa fa-twitter-square fa-2x social" aria-hidden="true"></i>
+			<i class="fa fa-instagram fa-2x social" aria-hidden="true"></i>
 		</div>
 
 		<div ><b><h3 id="things">Things I Do</h3></b></div>
@@ -71,7 +74,7 @@
 
 
 
-		<div class="button2" onclick="really()">
+		<div class="button2" onclick="playGame()">
 	  		<span></span>
 	  		<span></span>
 	  		<span></span>
@@ -87,10 +90,17 @@
 
 <script type="text/javascript">
 	
-	function really(){
+	function playGame(){
 		alert("really dude");
 		document.getElementById("h").innerHTML="really";
 
+	}
+
+	function theme(){
+		let theme = document.getElementById("theme");
+		let themeIcon =document.getElementById("theme-icon");
+		theme.classList.add("dark");
+		themeIcon.className="fa fa-sun-o";
 	}
 </script>
 </body>

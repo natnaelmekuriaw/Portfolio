@@ -39,6 +39,33 @@ a{
 	text-decoration: none!important;
 	color: #000000!important;
 }
+
+
+.dark-light {
+  background: #ffffff;
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 50px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  margin-top: 10px;
+  height: 48px;
+  filter: hue-rotate(0deg);
+  
+  transition: all 0.1s linear;
+}
+.dark-light:hover{
+  color: #ffffff;
+  background: #000000;
+  transform: scale(1.02,1.02);
+}
+.dark{
+  background: #000000;
+  color: #ffffff;
+}
 .rightlinks{
 	font-size: 20px;
 	
@@ -74,10 +101,10 @@ li:hover{
     width : 130px;
     border-radius : 200px;
 }*/
-.fa{
+.social{
 	padding-right: 10px;
 }
-.fa:hover{
+.social:hover{
 	color:  #00cc00;
 	transform: rotate(45deg);
 }
@@ -214,6 +241,10 @@ li:hover{
   transform: rotate(5deg);
 }
 #skill1:hover ~ .leafs{
+  transition-duration: 5s;
+  transform: rotate(0deg);
+}
+.leafs:hover{
   transition-duration: 5s;
   transform: rotate(0deg);
 
