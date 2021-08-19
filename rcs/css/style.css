@@ -208,7 +208,18 @@ li:hover{
 }
 
 .leafs{
+  display: inline;
 	overflow: hidden;
+  transition-duration: 5s;
+  transform: rotate(5deg);
+}
+#skill1:hover ~ .leafs{
+  transition-duration: 5s;
+  transform: rotate(0deg);
+
+}
+#skill2{
+  display: inline;
 }
 
 
