@@ -105,7 +105,7 @@ li:hover{
 
 .description,.description h4,p{
 	margin-right: 0px;
-	width: 50%;
+	width: 55%;
 	display: inline-block;
 }
 .description h4,p{
@@ -213,7 +213,9 @@ li:hover{
 
 
 body::-webkit-scrollbar {
+  background-color: #0066ff;
   width: 0.5em;
+  height: 0.2em!important;
 }
  
 body::-webkit-scrollbar-track {
@@ -221,6 +223,6 @@ body::-webkit-scrollbar-track {
 }
  
 body::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
+  background-color:   #000000;
   outline: 1px solid slategrey;
 }
