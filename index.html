@@ -17,11 +17,11 @@
 		<div class="nav navbar">
 			<div class="NM">NM</div>
 			<ul class="rightlinks">
-				<a href="#"><li class="links active" id="Home"><span></span><span></span><span></span><span></span>Home</li></a>
-				<a href="#"><li class="links">Skills</li>	</a>
-				<a href="#"><li class="links">About Me</li></a>
-				<a href="#"><li class="links">Works</li></a>
-				<a href="#"><li class="links" >Contacts</li></a>
+				<a href="#"><li class="links active" id="home"><span></span><span></span><span></span><span></span>Home</li></a>
+				<a href="#"><li class="links" id="skills">Skills</li>	</a>
+				<a href="#"><li class="links" id="about">About Me</li></a>
+				<a href="#"><li class="links" id="works">Works</li></a>
+				<a href="#"><li class="links" id="contact" >Contacts</li></a>
 				<li class="dark-light" onclick="theme()"><i class="fa fa-moon-o " id="theme-icon" aria-hidden="true"></i></li>
 				<!-- <i class="fa fa-sun-o" aria-hidden="true"></i> -->
 
@@ -98,9 +98,21 @@
 
 	function theme(){
 		let theme = document.getElementById("theme");
-		let themeIcon =document.getElementById("theme-icon");
+		let themeIcon = document.getElementById("theme-icon");
+		let home = document.getElementById("home");
+		let skills = document.getElementById("skills");
+		let avout = document.getElementById("about");
+		let works = document.getElementById("works");
+		let contact = document.getElementById("contact");
+
 		theme.classList.add("dark");
 		themeIcon.className="fa fa-sun-o";
+
+		home.classList.add("links-on-dark")
+		skills.classList.add("links-on-dark")
+		works.classList.add("links-on-dark")
+		about.classList.add("links-on-dark")
+		contact.classList.add("links-on-dark")
 	}
 </script>
 </body>

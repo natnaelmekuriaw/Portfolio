@@ -66,6 +66,12 @@ a{
   background: #000000;
   color: #ffffff;
 }
+.links-on-dark{
+  color: #ffffff!important;
+}
+.links-on-dark:hover {
+  color:  #00ff00!important;
+}
 .rightlinks{
 	font-size: 20px;
 	
