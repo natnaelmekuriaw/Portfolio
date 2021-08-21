@@ -125,9 +125,13 @@ li:hover{
 	text-align: center;
 /*		border : 2px solid red;*/
 }
-.skills#web{
-	background-color: red;
+.skills#web{	
 	max-width: 300px;
+
+}
+.skills#web{
+  
+  max-width: 4000px;
 
 }
 .skill-img,.skill-img {
@@ -138,7 +142,7 @@ li:hover{
 
 .description,.description h4,p{
 	margin-right: 0px;
-	width: 55%;
+	width: 65%;
 	display: inline-block;
 }
 .description h4,p{
