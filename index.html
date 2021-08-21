@@ -87,6 +87,10 @@
 
 
 <script type="text/javascript">
+
+	let status = {
+		theme: 0,
+	};
 	
 	function playGame(){
 		alert("really dude");
@@ -94,7 +98,8 @@
 
 	}
 
-	function theme(){
+	function theme(){		
+
 		let theme = document.getElementById("theme");
 		let themeIcon = document.getElementById("theme-icon");
 		let home = document.getElementById("home");
@@ -102,15 +107,33 @@
 		let avout = document.getElementById("about");
 		let works = document.getElementById("works");
 		let contact = document.getElementById("contact");
+		
 
-		theme.classList.add("dark");
-		themeIcon.className="fa fa-sun-o";
+		if(status.theme === 0){
+		
+				theme.classList.add("dark");
+				themeIcon.className="fa fa-sun-o";
+				home.classList.add("links-on-dark")
+				skills.classList.add("links-on-dark")
+				works.classList.add("links-on-dark")
+				about.classList.add("links-on-dark")
+				contact.classList.add("links-on-dark")
+				
+				status.theme = 1;
+			}
+			else{
 
-		home.classList.add("links-on-dark")
-		skills.classList.add("links-on-dark")
-		works.classList.add("links-on-dark")
-		about.classList.add("links-on-dark")
-		contact.classList.add("links-on-dark")
+				theme.classList.remove("dark");
+				themeIcon.className="fa fa-moon-o";
+		
+				home.classList.remove("links-on-dark")
+				skills.classList.remove("links-on-dark")
+				works.classList.remove("links-on-dark")
+				about.classList.remove("links-on-dark")
+				contact.classList.remove("links-on-dark")
+
+				status.theme = 0;
+			}
 	}
 </script>
 </body>
