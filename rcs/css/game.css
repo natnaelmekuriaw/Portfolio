@@ -1,0 +1,26 @@
+body{
+	background: gray;
+	font-family: robot;
+	margin: auto;
+}
+.wrapper{
+	margin: auto;
+	width: 98.5%;
+	height: 615px;
+	border: 10px solid #00cc00;
+}
+.snake{
+	display: inline-block;
+	background: blue;
+	/*width: 20px!important;
+	height: 10px!important;
+*/
+
+}
+.right{
+	display: inline-block;
+	width: 20px!important;
+	height: 10px!important;
+	background: blue;
+	margin-left: 100px;
+}
