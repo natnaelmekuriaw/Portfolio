@@ -102,6 +102,8 @@
 	function theme(){		
 
 		let theme = document.getElementById("theme");
+		let slink = document.getElementById("slink");
+		
 		let themeIcon = document.getElementById("theme-icon");
 		let home = document.getElementById("home");
 		let skills = document.getElementById("skills");
@@ -113,6 +115,7 @@
 		if(status.theme === 0){
 		
 				theme.classList.add("dark");
+				slink.classList.add("dark");
 				themeIcon.className="fa fa-sun-o";
 				home.classList.add("links-on-dark")
 				skills.classList.add("links-on-dark")
