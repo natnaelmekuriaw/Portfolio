@@ -64,7 +64,7 @@ a{
 }
 .dark{
   background: #000000;
-  color: #ffffff;
+  color: #ffffff!important;
 }
 .links-on-dark{
   color: #ffffff!important;
